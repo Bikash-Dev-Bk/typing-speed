@@ -120,6 +120,9 @@ const start = () => {
       startTime = new Date().getTime();
     }
     count--;
+    if (count == -1) {
+      countdownOverlay.style.display = "none";
+    }
   }, 1000);
 };
 
